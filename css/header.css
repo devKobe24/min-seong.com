@@ -1,3 +1,4 @@
+/* header css */
 *{
     margin: 0;
     padding: 0;
@@ -51,3 +52,4 @@ header nav ul li button{
     font-size: 1.2rem;
     color: white; /* 텍스트 흰색*/
 }
+/* end header css */
