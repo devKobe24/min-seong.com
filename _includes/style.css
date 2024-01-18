@@ -16,8 +16,8 @@ li{
     margin: 0 auto;
 }
 header{
-    position: absolute;
-    color: black;
+    position: fixed; /* absolute -> fixed */
+    color: white; /* black -> white */
     top: 0;
     z-index: 1;
     width: 100%;
@@ -45,7 +45,9 @@ header button{
 header h1 button{
     font-size: 2rem;
     font-weight: bold;
+    color: white; /* 텍스트 흰색*/
 }
 header nav ul li button{
     font-size: 1.2rem;
+    color: white; /* 텍스트 흰색*/
 }
