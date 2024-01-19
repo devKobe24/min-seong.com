@@ -1,0 +1,8 @@
+/* background.css */
+.bg{
+  background: url('../images/kobe_sky.jpg') center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+/* End background.css */

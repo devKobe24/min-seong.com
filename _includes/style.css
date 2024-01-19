@@ -238,5 +238,12 @@ section .do-me::after{
   section .do-me .do-inner:hover i{
     color:white;
   }
-  
   /* End what_i_do.css */
+  /* background.css */
+.bg{
+    background: url('../images/kobe_sky.jpg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+  }
+  /* End background.css */
