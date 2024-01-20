@@ -77,6 +77,7 @@ section.contact .contact-me .right button{
   background-color:#f78b00;
   border:none;
   color:white;
+  border-radius:10px;
 }
 
 /* End contact_with_me.css */
