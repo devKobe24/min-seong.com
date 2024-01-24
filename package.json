@@ -1,19 +1,34 @@
 {
-  "name": "min-seong.com",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "min-seong.com",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "devserver": "webpack-dev-server --open --progress"
+    "build": "webpack --mode=production --node-env=production",
+    "devserver": "webpack-dev-server --open --progress",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@webpack-cli/generators": "^3.0.7",
+    "autoprefixer": "^10.4.17",
     "babel-core": "^6.26.3",
     "babel-loader": "^9.1.3",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^6.9.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^8.0.0",
+    "prettier": "^3.2.4",
+    "style-loader": "^3.3.4",
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
