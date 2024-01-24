@@ -1,0 +1,20 @@
+{
+  "name": "min-seong.com",
+  "version": "1.0.0",
+  "description": "min-seong.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "devserver": "webpack-dev-server --open --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.3",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.90.0",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
