@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"); /* import from carf-flip */
 /* header css */
 *{
     margin: 0;
@@ -219,15 +220,16 @@ section .do-me::after{
   /* 사각형 크기와 간격, 내부 여백 설정 */
   section .do-me .do-inner{
     background-color: #fff;
-    width: 30%;
-    padding: 2rem;
+    width: 25%;
+    padding: 1.2rem;
     float: left;
     margin-right: 5%;
+    margin-top: 5%;
     cursor: pointer;
   }
   /* 마지막 사각형의 외부 여백 설정 */
   section .do-me .do-inner:last-child{
-    margin-right: 0;
+    margin-right: 0%;
   }
   /* 아이콘 폰트 크기와 색상 */
   section .do-me .do-inner .icon i{
@@ -501,3 +503,63 @@ section.contact .contact-me::after{
     }
   }
   /* End media.css */
+  /* Start Card-filp.css */
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;  
+    font-family: Pretendard;
+  }
+  
+  .flip { 
+    width: 200px;
+    height: 250px;
+    position: relative; 
+    perspective: 1100px;
+    margin: 2rem;
+  }
+  
+  .card {
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+  } 
+  
+  .front {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6a6a;
+  }
+  
+  .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+  }
+  
+  .front {
+    background: #f8f8f8;
+  }
+  
+  .back { 
+    background: #ff6a6a;
+    transform: rotateY(180deg);
+  }
+  
+  .flip:hover .card {
+    transform: rotateY(180deg);
+  }
+  /* End Card-filp.css */
