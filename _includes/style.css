@@ -294,10 +294,12 @@ section .do-me::after{
     color: #ff6a6a;
     margin: 0.5rem 0;
     display: block;
+    text-align: left;
   }
   /* h3 태그 색상과 간격 */
   section.portfolio .portfolio-inner h3{
     font-size: 1.75rem;
+    text-align: left;
   }
   /* End portfolio.css */
   /* contact_with_me.css */
