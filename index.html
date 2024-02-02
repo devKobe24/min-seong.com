@@ -290,20 +290,20 @@
           </div>
         </div>
         <div class="right">
-          <form action="#">
+          <form class="gform" method="post" data-email="dev.skyachieve91@gmail.com" action="https://script.google.com/macros/s/AKfycbwNnzgUyoboCNGeiMY1JZhcYUUGLURvh47nKp9nyeIQ-2fpmSy2Xpb1ILyUVOEZYVahNg/exec">
             <div class="form-group">
               <label for="name">name</label>
-              <input type="text" id="name">
+              <input type="text" id="name" name="name">
             </div>
             <div class="form-group">
               <label for="email">email</label>
-              <input type="text" id="email">
+              <input type="text" id="email" name="email">
             </div>
             <div class="form-group">
               <label for="msg">message</label>
-              <textarea id="msg"></textarea>
+              <textarea id="msg" type="text" name="message"></textarea>
             </div>
-            <button>send</button>
+            <button class="button-success pure-button button-xlarge" onclick="sendEmailFunction()">send</button>
           </form>
         </div>
       </div>
